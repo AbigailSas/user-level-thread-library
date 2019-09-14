@@ -14,6 +14,7 @@
 char stack[STACK_SIZE];
 
 
+/* code of translate_address writen by course staff */ 
 
  #ifdef __x86_64__
  /* code for 64 bit Intel arch */
@@ -54,6 +55,8 @@ char stack[STACK_SIZE];
  }
 
  #endif
+
+/* my code starts here */
 
  Thread::Thread(int tid, void (*f)(void)):id(tid), state(READY)
  {
